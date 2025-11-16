@@ -104,33 +104,6 @@ El proyecto consiste en una aplicación de lista de tareas implementada siguiend
 ✅ **Validación de datos**
 ✅ **Manejo de errores**
 
-## Instrucciones de Uso
-
-1. **Inicia XAMPP:** Asegúrate que Apache y MySQL estén ejecutándose
-2. **Importa la base de datos:** Ejecuta el archivo `bd.sql` en phpMyAdmin
-3. **Accede a la aplicación:** Navega a `http://localhost/AA26/ucp_to_do_PHP/ucp_to_do/public/`
-4. **¡Comienza a usar tu aplicación!** Todas las funciones están operativas
-
-## Opcional - Mejora de Auditoría
-
-Para agregar timestamps de finalización, ejecuta en phpMyAdmin:
-```sql
-ALTER TABLE tareas ADD COLUMN completed_at DATETIME NULL;
-```
-
-## Tecnologías Implementadas
-
-- **PHP 8.x** con arquitectura MVC
-- **MySQL** con PDO para acceso a datos
-- **HTML5** semántico
-- **CSS3** con diseño responsive
-- **JavaScript** vanilla para interactividad
-- **Apache** como servidor web.php**
-- **Archivo:** `model/Task.php`
-- **Línea:** 6 (método getAllTasks)
-- **Problema:** El campo "completada" era comparado con texto ('pending', 'completed'), pero en la BD es numérico (TINYINT)
-- **Solución:** Cambiar valores por defecto de 'pending' a 0 y usar 0/1 para consultas
-
 ### **Error 3 - Llamadas Incorrectas en TaskController.php**
 - **Archivo:** `controller/TaskController.php`
 - **Línea:** 24 (llamadas a getAllTasks)
