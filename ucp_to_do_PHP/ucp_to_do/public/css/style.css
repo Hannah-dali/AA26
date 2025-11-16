@@ -1,0 +1,99 @@
+/* /public/css/style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+ 
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center; 
+    color: #4a90e2;
+    margin-bottom: 25px;
+}
+
+.task-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.task-form input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+.task-form button {
+    padding: 10px 15px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task-form button:hover {
+    background-color: #3a7bd5;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 8px;
+    background-color: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.task-list li.completed {
+    background-color: #e6ffe6; /* Fondo verde claro para completadas */
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-list li .description {
+    flex-grow: 1;
+}
+
+.actions a {
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-left: 10px;
+    transition: opacity 0.3s;
+}
+
+.actions .complete-btn {
+    background-color: #5cb85c;
+    color: white;
+}
+
+.actions .delete-btn {
+    background-color: #d9534f;
+    color: white;
+}
